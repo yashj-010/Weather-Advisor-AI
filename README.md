@@ -3,7 +3,7 @@
 A smart, conversational chatbot that provides personalized outdoor activity safety advice across India. It leverages live weather data from Open-Meteo and strictly follows predefined safety policies (SOPs) to ensure you stay safe while planning your day. Built with **LangGraph** and **FastAPI**.
 
 
-** Live Demo:** [Weather Advisory](https://weather-advisor-ai-production.up.railway.app/)
+Live Demo: https://weather-advisor-ai-production.up.railway.app/
 
 ---
 
