@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Advisory</title>
+    <meta name="description"
+        content="Get personalized outdoor safety advice based on live weather data and expert safety policies.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="top-header">
+        <nav class="floating-nav">
+            <div class="nav-content">
+                <div class="logo-group">
+                    <div class="logo-icon">🌤️</div>
+                    <h1 class="nav-title">Weather Advisory</h1>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content" id="chatArea">
+        <div class="welcome-card" id="welcomeCard">
+            <h2>Namaste! How can I help you plan your day?</h2>
+            <p>Ask me about outdoor activities across India. I'll check live weather conditions and give you safety advice.</p>
+            <div class="example-queries">
+                <button class="example-btn" onclick="sendExample(this)">Is the air quality in Delhi safe for a morning jog today?</button>
+                <button class="example-btn" onclick="sendExample(this)">Is it safe to go for a trek in Manali tomorrow?</button>
+                <button class="example-btn" onclick="sendExample(this)">Is it too hot for a bike ride in Jaipur right now?</button>
+                <button class="example-btn" onclick="sendExample(this)">Can we plan a beach picnic in Goa this afternoon?</button>
+            </div>
+        </div>
+
+        <div id="messagesContainer"></div>
+        <div class="scroll-spacer"></div>
+    </main>
+
+    <div class="floating-input-container">
+        <div class="input-wrapper">
+            <textarea id="messageInput" placeholder="Ask about outdoor safety anywhere in India..." rows="1" autofocus></textarea>
+            <button class="send-btn" id="sendBtn" onclick="sendMessage()" title="Send message">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
